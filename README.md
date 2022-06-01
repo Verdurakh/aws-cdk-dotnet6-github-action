@@ -1,6 +1,6 @@
 # Github Action for using .Net Core Version of CDK
 
-Based off of this code base: https://github.com/youyo/aws-cdk-github-actions
+Based off of this code base: [https://github.com/youyo/aws-cdk-github-actions](https://github.com/two4suited/aws-cdk-dotnet-github-action)
 
 ```yaml
 name: CI
@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: cdk synth
         id: synth
-        uses: two4suited/aws-cdk-dotnet-github-action@master
+        uses: verdurakh/aws-cdk-dotnet6-github-action@master
         with:
           cdk_subcommand: 'synth'
           cdk_version: '1.24.0'
@@ -24,7 +24,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: 'us-west-2'
       - name: cdk deploy
-        uses: two4suited/aws-cdk-dotnet-github-action@master
+        uses: verdurakh/aws-cdk-dotnet6-github-action@master
         with:
           cdk_subcommand: 'deploy'
           actions_comment: false
