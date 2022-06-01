@@ -1,6 +1,5 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine AS base
-
-ENV DOTNET_VERSION=6.0.5
+ARG REPO=mcr.microsoft.com/dotnet/aspnet
+FROM $REPO:6.0.5-bullseye-slim-amd64
 
 RUN apk --update --no-cache add nodejs npm curl bash 
 
