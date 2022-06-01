@@ -1,5 +1,5 @@
-ARG REPO=mcr.microsoft.com/dotnet/core/sdk
-FROM $REPO:3.1-alpine3.10
+ARG REPO=mcr.microsoft.com/dotnet/runtime-deps:6.0
+FROM $REPO:6.0.5-alpine3.15
 
 RUN apk --update --no-cache add nodejs nodejs-npm curl bash 
 
