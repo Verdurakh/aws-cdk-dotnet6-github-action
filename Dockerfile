@@ -1,5 +1,5 @@
 ARG REPO=mcr.microsoft.com/dotnet/runtime-deps
-FROM $REPO:6.0.5-alpine3.14-arm32v7
+FROM $REPO:6.0.5-alpine3.14-amd64
 
 
 ENV DOTNET_VERSION=6.0.5
