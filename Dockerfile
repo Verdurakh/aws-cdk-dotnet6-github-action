@@ -1,6 +1,4 @@
-ARG REPO=mcr.microsoft.com/dotnet/sdk:6.0
-FROM $REPO:6.0.5-alpine3.14-amd64
-
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine AS base
 
 ENV DOTNET_VERSION=6.0.5
 
