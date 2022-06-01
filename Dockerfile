@@ -1,4 +1,4 @@
-ARG REPO=mcr.microsoft.com/dotnet/runtime-deps
+ARG REPO=mcr.microsoft.com/dotnet/sdk:6.0
 FROM $REPO:6.0.5-alpine3.14-amd64
 
 
