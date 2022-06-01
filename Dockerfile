@@ -1,5 +1,8 @@
-ARG REPO=mcr.microsoft.com/dotnet/runtime-deps:6.0.5
-FROM $REPO:6.0.5-alpine3.15-amd64
+ARG REPO=mcr.microsoft.com/dotnet/runtime-deps
+FROM $REPO:6.0.5-alpine3.14-arm32v7
+
+
+ENV DOTNET_VERSION=6.0.5
 
 RUN apk --update --no-cache add nodejs nodejs-npm curl bash 
 
