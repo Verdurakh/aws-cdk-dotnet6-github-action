@@ -4,7 +4,7 @@ FROM $REPO:6.0.5-alpine3.14-amd64
 
 ENV DOTNET_VERSION=6.0.5
 
-RUN apk --update --no-cache add nodejs nodejs-npm curl bash 
+RUN apk --update --no-cache add nodejs npm curl bash 
 
 COPY entrypoint.sh /entrypoint.sh
 
