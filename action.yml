@@ -1,4 +1,4 @@
-name: 'AWS CDK GitHub Actions'
+name: 'AWS CDK GitHub Actions dotnet6'
 description: 'Runs AWS-CDK via GitHub Actions.'
 author: 'verdurakh(verdurakh@gmail.com)'
 branding:
